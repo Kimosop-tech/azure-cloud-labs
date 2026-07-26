@@ -89,6 +89,18 @@ The following was verified after deployment:
 
 See the **screenshots** folder.
 
+### Azure Subscription
+
+![Azure Subscription](screenshots/01-azure-subscription.png)
+
+### Resource Group Deployment
+
+![Deployment](screenshots/02-resource-group-deployed.png)
+
+### Resource Group Overview
+
+![Overview](screenshots/03-resource-group-overview.png)
+
 ---
 
 ## Lessons Learned
