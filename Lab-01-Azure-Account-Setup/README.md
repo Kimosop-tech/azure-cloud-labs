@@ -28,7 +28,7 @@ This lab established the Azure environment that will be used throughout this lea
 
 | Resource Type | Resource Name | Region |
 |--------------|---------------|--------|
-| Resource Group | rg-cloudlab-01 | West US 2 |
+| Resource Group | rg-cloudlab-01 | East US |
 
 ---
 
@@ -41,7 +41,7 @@ This lab established the Azure environment that will be used throughout this lea
 5. Navigated to **Resource Groups**.
 6. Created a new Resource Group:
    - **Name:** `rg-cloudlab-01`
-   - **Region:** `West US 2`
+   - **Region:** `East US`
 7. Verified that the Resource Group was successfully created.
 
 ---
@@ -68,7 +68,7 @@ Azure regions are physical locations around the world where Azure services are h
 
 The region selected for these labs is:
 
-- **West US 2**
+- **East US**
 
 Using a consistent region helps simplify resource management and avoids compatibility issues between services.
 
