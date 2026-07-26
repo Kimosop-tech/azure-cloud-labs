@@ -85,6 +85,12 @@ The following was verified after deployment:
 
 ---
 
+## Screenshots
+
+See the **screenshots** folder.
+
+---
+
 ## Lessons Learned
 
 - Azure resources should be organized using Resource Groups.
