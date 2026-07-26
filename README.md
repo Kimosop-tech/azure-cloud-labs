@@ -15,7 +15,7 @@ This repository documents my hands-on journey learning Microsoft Azure through p
 
 | Lab | Status |
 |------|--------|
-| Lab 01 - Azure Account Setup | ✅ Completed |
+| Lab 01 - Azure Environment Setup & Resource Group Creation | ✅ Completed |
 | Lab 02 - Deploy Windows Server VM | ✅ Completed |
 | Lab 03 - Install IIS Web Server | ⏳ Planned |
 | Lab 04 - Azure Networking | ⏳ Planned |
