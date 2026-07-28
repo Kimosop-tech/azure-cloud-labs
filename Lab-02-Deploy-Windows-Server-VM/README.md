@@ -125,35 +125,32 @@ Cloud resources are region-dependent. If a VM size is unavailable in one region,
 
 **Issue**
 
-The initial virtual machine deployment failed during validation because the selected configuration was not supported in the chosen Azure region.
+The initial virtual machine deployment failed during validation because the selected **Availability options** were not compatible with the chosen deployment configuration.
 
 **Root Cause**
 
-The selected **Availability options** and VM size combination was not available in the original deployment region.
+The VM was initially configured with an availability option that required Azure to provision the virtual machine on specific infrastructure. For this lab environment, that restriction reduced the available deployment options and prevented successful validation.
 
 **Troubleshooting Process**
 
-- Reviewed the Azure validation error.
-- Investigated the deployment configuration instead of immediately changing VM size.
-- Identified that the **Availability options** setting was contributing to the deployment issue.
-- Updated the deployment configuration.
-- Changed the deployment region from **East US** to **West US 2**, where the selected configuration was supported.
+- Reviewed the Azure validation message.
+- Examined the VM deployment settings instead of changing the VM size.
+- Identified that the **Availability options** setting could be simplified for a lab environment.
+- Changed the Availability option to:
+
+```
+No infrastructure redundancy required
+```
+
 - Revalidated the deployment.
 
 **Resolution**
 
-The deployment validation passed successfully, and the Windows Server VM was provisioned without further errors.
+After changing the Availability option to **No infrastructure redundancy required**, Azure successfully validated the deployment configuration. The VM was then deployed successfully.
 
 **Lesson Learned**
 
-Azure VM deployment depends on several factors, including:
-
-- Region availability
-- VM size availability
-- Availability options
-- Azure capacity at the time of deployment
-
-When a deployment fails, reviewing the validation details helps identify the actual cause instead of relying on trial and error.
+Availability options determine how Azure places virtual machines across its infrastructure. Features such as Availability Zones and other redundancy options improve resiliency for production workloads but can also limit deployment choices. For a learning lab where high availability is not required, selecting **No infrastructure redundancy required** simplifies deployment and increases the likelihood of successful provisioning.
 
 ---
 
