@@ -210,21 +210,15 @@ Azure generates an RDP configuration file that simplifies secure remote access t
 
 ---
 
-### Deployment Successful
-
-![Deployment Successful](screenshots/02-deployment-successful.png)
-
----
-
 ### Connect to Virtual Machine
 
-![RDP Connection](screenshots/03-rdp-connect.png)
+![RDP Connection](screenshots/02-rdp-connect.png)
 
 ---
 
 ### Windows Server Desktop
 
-![Windows Server](screenshots/04-server-manager.png)
+![Windows Server](screenshots/03-server-manager.png)
 
 ---
 
